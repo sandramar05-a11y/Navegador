@@ -10,12 +10,18 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("Bienvenido a la app de Cuyos")
         }
-        .padding()
+        Spacer()
+        NavigationStack {
+            NavigationLink(destination: CuyodView()) {
+                HomeView()
+            }
+            Spacer()
+            Text("Desarrollado por Sandra")
+        }
+        
+
     }
 }
 
