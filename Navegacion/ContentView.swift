@@ -15,7 +15,7 @@ struct ContentView: View {
         Spacer()
         NavigationStack {
             NavigationLink(destination: CuyodView()) {
-                HomeView()
+                ItemDetailsView()
             }
             Spacer()
             Text("Desarrollado por Sandra")
